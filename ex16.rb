@@ -1,16 +1,16 @@
-filename = ARGV.first
+filename = ARGV.first #set the argument (the file we want) and point the variable to it
 
 puts "We're going to erase #{filename}"
 puts "If you don't want that, hit CTRL-C (^C)."
 puts "If you do want that, hit RETURN."
 
-$stdin.gets
+$stdin.gets #this takes input from me to answer above question
 
 puts "Opening the file..."
-target = open(filename, 'w')
+target = open(filename, 'w') #this opens the file in 'write' mode and the variable target points to it
 
 puts "Truncating the file. Goodbye"
-target.truncate(0)
+target.truncate(0) #
 
 puts "Now I'm going to ask you for three lines."
 
